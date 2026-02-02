@@ -6,13 +6,14 @@ exports.generateAccessToken = (user) => {
   return jwt.sign(
     {
       id: user.id,
-      role: user.role_name,
+      role: user.role,        // 🔥 clean & consistent
       company_id: user.company_id
     },
     process.env.JWT_ACCESS_SECRET,
     { expiresIn: process.env.ACCESS_TOKEN_EXPIRY }
   );
 };
+
 
 exports.generateRefreshToken = (user) => {
   return jwt.sign(

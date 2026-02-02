@@ -11,7 +11,7 @@ exports.create = async (data) => {
 
 exports.getAll = async () => {
   const [rows] = await db.query(
-    `SELECT * FROM roles WHERE is_active = 1`
+    `SELECT * FROM roles`
   );
   return rows;
 };
@@ -33,7 +33,7 @@ exports.update = async (id, data) => {
 
 exports.softDelete = async (id) => {
   await db.query(
-    `UPDATE roles SET is_active = 0 WHERE id = ?`,
+    `DELETE FROM roles WHERE id = ?`,
     [id]
   );
 };

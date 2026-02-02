@@ -34,7 +34,10 @@ exports.getAll = async () => {
 exports.getByEmail = async (email) => {
   const [[row]] = await db.query(
     `SELECT 
-       u.*, r.name AS role_name 
+       u.id,
+       u.company_id,
+       u.password_hash,
+       r.name AS role
      FROM users u
      JOIN roles r ON r.id = u.role_id
      WHERE u.email = ? AND u.is_active = 1`,
@@ -42,6 +45,7 @@ exports.getByEmail = async (email) => {
   );
   return row;
 };
+
 
 exports.getById = async (id) => {
   const [[row]] = await db.query(
