@@ -2,6 +2,18 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 module.exports = (req, res, next) => {
+
+  // 🔥 TEMPORARY AUTH DISABLE
+  if (process.env.DISABLE_AUTH === 'true') {
+    // mock logged-in user
+    req.user = {
+      id: 1,
+      role: 'Admin',
+      company_id: 1
+    };
+    return next();
+  }
+
   const authHeader = req.headers.authorization;
 
   if (!authHeader) {

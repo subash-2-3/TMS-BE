@@ -1,5 +1,11 @@
 exports.authorizeRoles = (...allowedRoles) => {
   return (req, res, next) => {
+
+    // 🔥 TEMPORARY ROLE CHECK DISABLE
+    if (process.env.DISABLE_AUTH === 'true') {
+      return next();
+    }
+
     if (!req.user) {
       return res.status(401).json({ message: 'Unauthorized' });
     }
