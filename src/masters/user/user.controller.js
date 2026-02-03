@@ -1,8 +1,16 @@
 const bcrypt = require('bcryptjs');
+const logger = require('../../utils/logger');
+const AppError = require('../../utils/AppError');
+const { asyncHandler } = require('../../middlewares/errorHandler');
 const service = require('./user.service');
 
-exports.createUser = async (req, res) => {
+exports.createUser = asyncHandler(async (req, res, next) => {
   try {
+    if (!req.body.password) {
+      logger.warn('Create user request missing password', { email: req.body.email });
+      return next(AppError.badRequest('Password is required', 'MISSING_PASSWORD'));
+    }
+
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
 
     const id = await service.create({
@@ -10,44 +18,75 @@ exports.createUser = async (req, res) => {
       password_hash: hashedPassword
     });
 
-    res.status(201).json({ message: 'User created', id });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
+    logger.info('User created via controller', { userId: id, email: req.body.email });
 
-exports.getUsers = async (req, res) => {
+    res.status(201).json({
+      success: true,
+      message: 'User created successfully',
+      data: { id }
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.getUsers = asyncHandler(async (req, res, next) => {
   try {
     const data = await service.getAll();
-    res.json(data);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
 
-exports.getUserById = async (req, res) => {
+    logger.info('Users list request handled', { count: data.length, userId: req.user.id });
+
+    res.json({
+      success: true,
+      data,
+      count: data.length
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.getUserById = asyncHandler(async (req, res, next) => {
   try {
     const data = await service.getById(req.params.id);
-    res.json(data);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
 
-exports.updateUser = async (req, res) => {
+    logger.info('User detail request handled', { requestedUserId: req.params.id, userId: req.user.id });
+
+    res.json({
+      success: true,
+      data
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.updateUser = asyncHandler(async (req, res, next) => {
   try {
     await service.update(req.params.id, req.body);
-    res.json({ message: 'User updated' });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
 
-exports.deleteUser = async (req, res) => {
+    logger.info('User update request handled', { updatedUserId: req.params.id, userId: req.user.id });
+
+    res.json({
+      success: true,
+      message: 'User updated successfully'
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.deleteUser = asyncHandler(async (req, res, next) => {
   try {
     await service.softDelete(req.params.id);
-    res.json({ message: 'User deactivated' });
+
+    logger.info('User deactivation request handled', { deactivatedUserId: req.params.id, userId: req.user.id });
+
+    res.json({
+      success: true,
+      message: 'User deactivated successfully'
+    });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    next(err);
   }
-};
+});

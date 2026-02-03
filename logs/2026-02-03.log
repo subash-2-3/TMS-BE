@@ -1,0 +1,100 @@
+[2026-02-03T05:05:32.230Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:05:32.232Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:05:42.457Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:05:42.460Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:05:42.485Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:05:48.622Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:05:48.624Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:05:48.656Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:05:52.580Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:05:52.581Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:05:52.602Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:06:02.400Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:06:02.402Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:06:02.429Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:06:13.916Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:06:13.920Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:06:13.956Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:06:20.912Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:06:20.914Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:06:20.938Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:06:24.369Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:06:24.371Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:06:24.400Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:06:25.779Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:06:25.782Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:06:25.803Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:06:27.432Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:06:27.434Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:06:27.454Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:06:28.972Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:06:28.974Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:06:28.998Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:06:30.758Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:06:30.779Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:06:30.883Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:06:31.660Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:06:31.662Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:06:31.684Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:14:25.897Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:14:25.899Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:14:25.920Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:14:31.742Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:14:31.744Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:14:31.778Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:14:56.133Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/","userId":null}
+[2026-02-03T05:14:56.165Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui.css","userId":null}
+[2026-02-03T05:14:56.171Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-bundle.js","userId":null}
+[2026-02-03T05:14:56.178Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-standalone-preset.js","userId":null}
+[2026-02-03T05:14:56.183Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-init.js","userId":null}
+[2026-02-03T05:14:56.480Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/favicon-32x32.png","userId":null}
+[2026-02-03T05:15:07.498Z] [INFO] HTTP Request | {"method":"POST","path":"/api/projects","userId":null}
+[2026-02-03T05:15:07.500Z] [WARN] 404 Not Found | {"method":"POST","path":"/api/projects"}
+[2026-02-03T05:15:30.942Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-03T05:15:30.946Z] [WARN] 404 Not Found | {"method":"GET","path":"/api/projects"}
+[2026-02-03T05:20:39.227Z] [INFO] HTTP Request | {"method":"POST","path":"/api/projects","userId":null}
+[2026-02-03T05:20:39.228Z] [WARN] 404 Not Found | {"method":"POST","path":"/api/projects"}
+[2026-02-03T05:23:09.705Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-03T05:23:09.706Z] [WARN] 404 Not Found | {"method":"GET","path":"/api/projects"}
+[2026-02-03T05:23:24.671Z] [INFO] HTTP Request | {"method":"POST","path":"/api/projects","userId":null}
+[2026-02-03T05:23:24.671Z] [WARN] 404 Not Found | {"method":"POST","path":"/api/projects"}
+[2026-02-03T05:24:02.992Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:24:03.019Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:24:03.018Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:24:03.031Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:24:03.065Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:24:03.086Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:24:14.218Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/","userId":null}
+[2026-02-03T05:24:14.263Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui.css","userId":null}
+[2026-02-03T05:24:14.267Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-bundle.js","userId":null}
+[2026-02-03T05:24:14.272Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-standalone-preset.js","userId":null}
+[2026-02-03T05:24:14.277Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-init.js","userId":null}
+[2026-02-03T05:24:14.637Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/favicon-32x32.png","userId":null}
+[2026-02-03T05:24:19.976Z] [INFO] HTTP Request | {"method":"POST","path":"/api/projects","userId":null}
+[2026-02-03T05:24:19.994Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-03T05:24:20.043Z] [INFO] Project created successfully | {"projectId":1,"company_id":1}
+[2026-02-03T05:24:20.044Z] [INFO] Project creation request handled | {"projectId":1,"userId":1}
+[2026-02-03T05:24:48.947Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-03T05:24:48.948Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-03T05:24:48.957Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-03T05:24:48.963Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-03T05:25:07.651Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects/1","userId":null}
+[2026-02-03T05:25:07.652Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-03T05:25:07.659Z] [INFO] Project detail request handled | {"projectId":"1","userId":1}
+[2026-02-03T05:25:40.087Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/projects/1","userId":null}
+[2026-02-03T05:25:40.088Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-03T05:25:40.484Z] [INFO] Project updated successfully | {"projectId":"1"}
+[2026-02-03T05:25:40.486Z] [INFO] Project update request handled | {"projectId":"1","userId":1}
+[2026-02-03T05:25:56.891Z] [INFO] HTTP Request | {"method":"DELETE","path":"/api/projects/1","userId":null}
+[2026-02-03T05:25:56.892Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-03T05:25:56.931Z] [INFO] Project archived successfully | {"projectId":"1"}
+[2026-02-03T05:25:56.931Z] [INFO] Project archive request handled | {"projectId":"1","userId":1}
+[2026-02-03T05:38:00.758Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:38:00.772Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:38:00.820Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T05:38:00.835Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T05:38:00.840Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T05:38:00.871Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-03T07:46:01.798Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-03T07:46:01.811Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-03T07:46:02.259Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}

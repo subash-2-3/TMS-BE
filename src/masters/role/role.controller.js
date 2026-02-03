@@ -1,46 +1,80 @@
+const logger = require('../../utils/logger');
+const { asyncHandler } = require('../../middlewares/errorHandler');
 const service = require('./role.service');
 
-exports.createRole = async (req, res) => {
+exports.createRole = asyncHandler(async (req, res, next) => {
   try {
     const id = await service.create(req.body);
-    res.status(201).json({ message: 'Role created', id });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
 
-exports.getRoles = async (req, res) => {
+    logger.info('Role created via controller', { roleId: id, userId: req.user.id });
+
+    res.status(201).json({
+      success: true,
+      message: 'Role created successfully',
+      data: { id }
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.getRoles = asyncHandler(async (req, res, next) => {
   try {
     const data = await service.getAll();
-    res.json(data);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
 
-exports.getRoleById = async (req, res) => {
+    logger.info('Roles list request handled', { count: data.length, userId: req.user.id });
+
+    res.json({
+      success: true,
+      data,
+      count: data.length
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.getRoleById = asyncHandler(async (req, res, next) => {
   try {
     const data = await service.getById(req.params.id);
-    res.json(data);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
 
-exports.updateRole = async (req, res) => {
+    logger.info('Role detail request handled', { roleId: req.params.id, userId: req.user.id });
+
+    res.json({
+      success: true,
+      data
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.updateRole = asyncHandler(async (req, res, next) => {
   try {
     await service.update(req.params.id, req.body);
-    res.json({ message: 'Role updated' });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
 
-exports.deleteRole = async (req, res) => {
+    logger.info('Role update request handled', { roleId: req.params.id, userId: req.user.id });
+
+    res.json({
+      success: true,
+      message: 'Role updated successfully'
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.deleteRole = asyncHandler(async (req, res, next) => {
   try {
     await service.softDelete(req.params.id);
-    res.json({ message: 'Role deactivated' });
+
+    logger.info('Role deletion request handled', { roleId: req.params.id, userId: req.user.id });
+
+    res.json({
+      success: true,
+      message: 'Role deleted successfully'
+    });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    next(err);
   }
-};
+});
