@@ -1,6 +1,8 @@
+const logger = require('../../utils/logger');
+const { asyncHandler } = require('../../middlewares/errorHandler');
 const service = require('./role.service');
 
-exports.createRole = async (req, res) => {
+exports.createRole = asyncHandler(async (req, res, next) => {
   try {
     // Check for duplicate role name
     const duplicate = await service.checkDuplicate(req.body.name);
@@ -9,11 +11,6 @@ exports.createRole = async (req, res) => {
     }
 
     const id = await service.create(req.body);
-    res.status(201).json({ message: 'Role created', id });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
 
 exports.getRole = async (req, res) => {
   try {
@@ -25,20 +22,43 @@ exports.getRole = async (req, res) => {
   }
 };
 
-exports.updateRole = async (req, res) => {
+    logger.info('Role detail request handled', { roleId: req.params.id, userId: req.user.id });
+
+    res.json({
+      success: true,
+      data
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.updateRole = asyncHandler(async (req, res, next) => {
   try {
     await service.update(req.params.id, req.body);
-    res.json({ message: 'Role updated' });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
 
-exports.deleteRole = async (req, res) => {
+    logger.info('Role update request handled', { roleId: req.params.id, userId: req.user.id });
+
+    res.json({
+      success: true,
+      message: 'Role updated successfully'
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+exports.deleteRole = asyncHandler(async (req, res, next) => {
   try {
     await service.softDelete(req.params.id);
-    res.json({ message: 'Role deactivated' });
+
+    logger.info('Role deletion request handled', { roleId: req.params.id, userId: req.user.id });
+
+    res.json({
+      success: true,
+      message: 'Role deleted successfully'
+    });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    next(err);
   }
-};
+});
