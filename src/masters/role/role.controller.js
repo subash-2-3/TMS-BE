@@ -11,6 +11,16 @@ exports.createRole = asyncHandler(async (req, res, next) => {
     }
 
     const id = await service.create(req.body);
+    logger.info('Role created via controller', { roleId: id, name: req.body.name });
+
+    res.json({
+      success: true,
+      data: { id }
+    });
+  } catch (err) {
+    next(err);
+  }
+});
 
 exports.getRole = async (req, res) => {
   try {
@@ -21,17 +31,6 @@ exports.getRole = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
-
-    logger.info('Role detail request handled', { roleId: req.params.id, userId: req.user.id });
-
-    res.json({
-      success: true,
-      data
-    });
-  } catch (err) {
-    next(err);
-  }
-});
 
 exports.updateRole = asyncHandler(async (req, res, next) => {
   try {

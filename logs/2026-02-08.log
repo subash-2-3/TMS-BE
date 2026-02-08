@@ -1,0 +1,73 @@
+[2026-02-08T09:37:34.837Z] [INFO] Server starting on port 3000 | {"port":"3000"}
+[2026-02-08T09:37:34.839Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-08T09:37:35.433Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-08T09:37:38.530Z] [INFO] Server starting on port 3000 | {"port":"3000"}
+[2026-02-08T09:37:38.532Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-08T09:37:38.551Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-08T09:37:49.701Z] [INFO] Server starting on port 3000 | {"port":"3000"}
+[2026-02-08T09:37:49.703Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-08T09:37:49.724Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-08T09:37:58.902Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs","userId":null}
+[2026-02-08T09:37:58.944Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/","userId":null}
+[2026-02-08T09:37:58.966Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui.css","userId":null}
+[2026-02-08T09:37:58.969Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-bundle.js","userId":null}
+[2026-02-08T09:37:58.972Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-standalone-preset.js","userId":null}
+[2026-02-08T09:37:58.973Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-init.js","userId":null}
+[2026-02-08T09:38:08.995Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-08T09:38:08.998Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:38:09.008Z] [INFO] Roles fetched successfully | {"count":2}
+[2026-02-08T09:38:09.288Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-08T09:38:09.289Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:38:09.292Z] [INFO] Roles fetched successfully | {"count":2}
+[2026-02-08T09:38:13.718Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-08T09:38:13.719Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:38:13.721Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-08T09:38:13.722Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:38:13.724Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-08T09:38:13.725Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:38:13.732Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-08T09:38:13.739Z] [INFO] Roles fetched successfully | {"count":2}
+[2026-02-08T09:38:13.747Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-08T09:38:32.027Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-08T09:38:32.027Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:38:32.034Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-08T09:38:33.255Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-08T09:38:33.256Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:38:33.263Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-08T09:38:34.212Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-08T09:38:34.213Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:38:34.219Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-08T09:38:47.641Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-08T09:38:47.641Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:38:47.645Z] [INFO] Roles fetched successfully | {"count":2}
+[2026-02-08T09:39:03.674Z] [INFO] HTTP Request | {"method":"POST","path":"/api/roles","userId":null}
+[2026-02-08T09:39:03.676Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:39:03.686Z] [INFO] Role created successfully | {"roleId":4,"name":"asd"}
+[2026-02-08T09:39:03.687Z] [INFO] Role created via controller | {"roleId":4,"name":"asd"}
+[2026-02-08T09:39:03.692Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-08T09:39:03.693Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:39:03.696Z] [INFO] Roles fetched successfully | {"count":3}
+[2026-02-08T09:39:07.677Z] [INFO] HTTP Request | {"method":"DELETE","path":"/api/roles/4","userId":null}
+[2026-02-08T09:39:07.678Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:39:07.686Z] [INFO] Role deleted successfully | {"roleId":"4"}
+[2026-02-08T09:39:07.687Z] [INFO] Role deletion request handled | {"roleId":"4","userId":1}
+[2026-02-08T09:39:07.707Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-08T09:39:07.708Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:39:07.710Z] [INFO] Roles fetched successfully | {"count":2}
+[2026-02-08T09:39:10.920Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-08T09:39:10.921Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:39:10.923Z] [INFO] Roles fetched successfully | {"count":2}
+[2026-02-08T09:39:18.605Z] [INFO] HTTP Request | {"method":"POST","path":"/api/roles","userId":null}
+[2026-02-08T09:39:18.606Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:39:18.612Z] [INFO] Role created successfully | {"roleId":5,"name":"ada"}
+[2026-02-08T09:39:18.613Z] [INFO] Role created via controller | {"roleId":5,"name":"ada"}
+[2026-02-08T09:39:18.618Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-08T09:39:18.619Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:39:18.622Z] [INFO] Roles fetched successfully | {"count":3}
+[2026-02-08T09:39:21.459Z] [INFO] HTTP Request | {"method":"DELETE","path":"/api/roles/5","userId":null}
+[2026-02-08T09:39:21.460Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:39:21.474Z] [INFO] Role deleted successfully | {"roleId":"5"}
+[2026-02-08T09:39:21.475Z] [INFO] Role deletion request handled | {"roleId":"5","userId":1}
+[2026-02-08T09:39:21.483Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-08T09:39:21.484Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-08T09:39:21.488Z] [INFO] Roles fetched successfully | {"count":2}
