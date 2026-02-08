@@ -1,13 +1,24 @@
 const bcrypt = require('bcryptjs');
 const service = require('./user.service');
+const { createBase64DataURI } = require('../../utils/imageUpload.util');
 
 exports.createUser = async (req, res) => {
   try {
+    // Check for duplicate email
+    const duplicate = await service.checkDuplicate(req.body.email);
+    if (duplicate) {
+      return res.status(400).json({ message: 'User with this email already exists' });
+    }
+
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
+    const profileImage = req.file 
+      ? createBase64DataURI(req.file.buffer, req.file.mimetype)
+      : null;
 
     const id = await service.create({
       ...req.body,
-      password_hash: hashedPassword
+      password_hash: hashedPassword,
+      profile_image: profileImage
     });
 
     res.status(201).json({ message: 'User created', id });
@@ -16,18 +27,10 @@ exports.createUser = async (req, res) => {
   }
 };
 
-exports.getUsers = async (req, res) => {
+exports.getUser = async (req, res) => {
   try {
-    const data = await service.getAll();
-    res.json(data);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
-
-exports.getUserById = async (req, res) => {
-  try {
-    const data = await service.getById(req.params.id);
+    const id = req.params.id;
+    const data = id ? await service.getById(id) : await service.getAll();
     res.json(data);
   } catch (err) {
     res.status(500).json({ message: err.message });
@@ -36,8 +39,16 @@ exports.getUserById = async (req, res) => {
 
 exports.updateUser = async (req, res) => {
   try {
-    await service.update(req.params.id, req.body);
-    res.json({ message: 'User updated' });
+    const updateData = { ...req.body };
+    
+    // If new image is uploaded, convert to base64
+    if (req.file) {
+      updateData.profile_image = createBase64DataURI(req.file.buffer, req.file.mimetype);
+    }
+    
+    await service.update(req.params.id, updateData);
+    
+    res.json({ message: 'User updated', profile_image: updateData.profile_image });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

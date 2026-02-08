@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const controller = require('./user.controller');
 const { authorizeRoles } = require('../../middlewares/authorize');
+const { upload } = require('../../utils/imageUpload.util');
 
 /**
  * @swagger
@@ -20,7 +21,7 @@ const { authorizeRoles } = require('../../middlewares/authorize');
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             required:
@@ -47,46 +48,34 @@ const { authorizeRoles } = require('../../middlewares/authorize');
  *                 example: Password@123
  *               profile_image:
  *                 type: string
+ *                 format: binary
  *     responses:
  *       201:
  *         description: User created successfully
  */
-router.post('/', authorizeRoles('Admin'), controller.createUser);
+router.post('/', authorizeRoles('Admin'), upload.single('profile_image'), controller.createUser);
 
 /**
  * @swagger
  * /api/users:
  *   get:
- *     summary: Get all users
- *     tags: [User]
- *     security:
- *       - bearerAuth: []
- *     responses:
- *       200:
- *         description: List of users
- */
-router.get('/', authorizeRoles('Admin'), controller.getUsers);
-
-/**
- * @swagger
- * /api/users/{id}:
- *   get:
- *     summary: Get user by ID
+ *     summary: Get all users or user by ID
  *     tags: [User]
  *     security:
  *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
- *         required: true
+ *         required: false
  *         schema:
  *           type: integer
  *           example: 5
+ *         description: Optional ID to get specific user
  *     responses:
  *       200:
- *         description: User details
+ *         description: List of users or user details
  */
-router.get('/:id', authorizeRoles('Admin'), controller.getUserById);
+router.get(['/', '/:id'], authorizeRoles('Admin'), controller.getUser);
 
 /**
  * @swagger
@@ -105,7 +94,7 @@ router.get('/:id', authorizeRoles('Admin'), controller.getUserById);
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             properties:
@@ -119,11 +108,12 @@ router.get('/:id', authorizeRoles('Admin'), controller.getUserById);
  *                 type: string
  *               profile_image:
  *                 type: string
+ *                 format: binary
  *     responses:
  *       200:
  *         description: User updated successfully
  */
-router.put('/:id', authorizeRoles('Admin'), controller.updateUser);
+router.put('/:id', authorizeRoles('Admin'), upload.single('profile_image'), controller.updateUser);
 
 /**
  * @swagger

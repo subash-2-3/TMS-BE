@@ -1,5 +1,13 @@
 const db = require('../../db');
 
+exports.checkDuplicate = async (name) => {
+  const [[row]] = await db.query(
+    `SELECT id FROM roles WHERE name = ?`,
+    [name]
+  );
+  return row;
+};
+
 exports.create = async (data) => {
   const [result] = await db.query(
     `INSERT INTO roles (name, description)

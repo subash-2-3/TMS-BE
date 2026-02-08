@@ -2,6 +2,12 @@ const service = require('./role.service');
 
 exports.createRole = async (req, res) => {
   try {
+    // Check for duplicate role name
+    const duplicate = await service.checkDuplicate(req.body.name);
+    if (duplicate) {
+      return res.status(400).json({ message: 'Role with this name already exists' });
+    }
+
     const id = await service.create(req.body);
     res.status(201).json({ message: 'Role created', id });
   } catch (err) {
@@ -9,18 +15,10 @@ exports.createRole = async (req, res) => {
   }
 };
 
-exports.getRoles = async (req, res) => {
+exports.getRole = async (req, res) => {
   try {
-    const data = await service.getAll();
-    res.json(data);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
-
-exports.getRoleById = async (req, res) => {
-  try {
-    const data = await service.getById(req.params.id);
+    const id = req.params.id;
+    const data = id ? await service.getById(id) : await service.getAll();
     res.json(data);
   } catch (err) {
     res.status(500).json({ message: err.message });

@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const controller = require('./company.controller');
 const { authorizeRoles } = require('../../middlewares/authorize');
+const { upload } = require('../../utils/imageUpload.util');
 
 /**
  * @swagger
@@ -20,7 +21,7 @@ const { authorizeRoles } = require('../../middlewares/authorize');
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             required:
@@ -35,45 +36,35 @@ const { authorizeRoles } = require('../../middlewares/authorize');
  *                 type: string
  *               address:
  *                 type: string
+ *               company_logo:
+ *                 type: string
+ *                 format: binary
  *     responses:
  *       201:
  *         description: Company created
  */
-router.post('/', authorizeRoles('Admin'), controller.createCompany);
+router.post('/', authorizeRoles('Admin'), upload.single('company_logo'), controller.createCompany);
 
 /**
  * @swagger
  * /api/companies:
  *   get:
- *     summary: Get all companies
- *     tags: [Company]
- *     security:
- *       - bearerAuth: []
- *     responses:
- *       200:
- *         description: List of companies
- */
-router.get('/', authorizeRoles('Admin'), controller.getCompanies);
-
-/**
- * @swagger
- * /api/companies/{id}:
- *   get:
- *     summary: Get company by ID
+ *     summary: Get all companies or company by ID
  *     tags: [Company]
  *     security:
  *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
- *         required: true
+ *         required: false
  *         schema:
  *           type: integer
+ *         description: Optional ID to get specific company
  *     responses:
  *       200:
- *         description: Company details
+ *         description: List of companies or company details
  */
-router.get('/:id', authorizeRoles('Admin'), controller.getCompanyById);
+router.get(['/', '/:id'], authorizeRoles('Admin'), controller.getCompany);
 
 /**
  * @swagger
@@ -92,14 +83,26 @@ router.get('/:id', authorizeRoles('Admin'), controller.getCompanyById);
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               address:
+ *                 type: string
+ *               company_logo:
+ *                 type: string
+ *                 format: binary
  *     responses:
  *       200:
  *         description: Company updated
  */
-router.put('/:id', authorizeRoles('Admin'), controller.updateCompany);
+router.put('/:id', authorizeRoles('Admin'), upload.single('company_logo'), controller.updateCompany);
 
 /**
  * @swagger

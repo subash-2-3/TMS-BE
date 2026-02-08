@@ -41,35 +41,22 @@ router.post('/', authorizeRoles('Admin'), controller.createRole);
  * @swagger
  * /api/roles:
  *   get:
- *     summary: Get all roles
- *     tags: [Role]
- *     security:
- *       - bearerAuth: []
- *     responses:
- *       200:
- *         description: List of roles
- */
-router.get('/', authorizeRoles('Admin'), controller.getRoles);
-
-/**
- * @swagger
- * /api/roles/{id}:
- *   get:
- *     summary: Get role by ID
+ *     summary: Get all roles or role by ID
  *     tags: [Role]
  *     security:
  *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
- *         required: true
+ *         required: false
  *         schema:
  *           type: integer
+ *         description: Optional ID to get specific role
  *     responses:
  *       200:
- *         description: Role details
+ *         description: List of roles or role details
  */
-router.get('/:id', authorizeRoles('Admin'), controller.getRoleById);
+router.get(['/', '/:id'], authorizeRoles('Admin'), controller.getRole);
 
 /**
  * @swagger

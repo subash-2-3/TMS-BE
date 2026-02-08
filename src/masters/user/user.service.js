@@ -1,5 +1,13 @@
 const db = require('../../db');
 
+exports.checkDuplicate = async (email) => {
+  const [[row]] = await db.query(
+    `SELECT id FROM users WHERE email = ? AND is_active = 1`,
+    [email]
+  );
+  return row;
+};
+
 exports.create = async (data) => {
   const [result] = await db.query(
     `INSERT INTO users 
