@@ -55,7 +55,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/companies', authMiddleware, companyRoutes);
 app.use('/api/roles', authMiddleware, roleRoutes);
 app.use('/api/users', authMiddleware, userRoutes);
-app.use('/api/projects',authMiddleware, projectRoutes);
+app.use('/api/projects', authMiddleware, projectRoutes);
 
 /* ---------- Health Check ---------- */
 app.get('/', (req, res) => {
@@ -82,10 +82,22 @@ app.use(errorHandler);
 
 /* ---------- Server ---------- */
 const PORT = process.env.PORT || 3000;
-const server = app.listen(PORT, () => {
-  logger.info(`Server starting on port ${PORT}`, { port: PORT, env: process.env.NODE_ENV });
-  logger.info(`Swagger docs available at http://localhost:${PORT}/api/docs`);
-});
+
+// Run migrations before starting
+const runMigrations = require('./migrations/run');
+
+runMigrations()
+  .then(() => {
+    logger.info('Migrations completed successfully');
+    const server = app.listen(PORT, () => {
+      logger.info(`Server starting on port ${PORT}`, { port: PORT, env: process.env.NODE_ENV });
+      logger.info(`Swagger docs available at http://localhost:${PORT}/api/docs`);
+    });
+  })
+  .catch((err) => {
+    logger.error('Failed to run migrations', err);
+    process.exit(1);
+  });
 
 // Handle unhandled promise rejections
 process.on('unhandledRejection', (reason, promise) => {

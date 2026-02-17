@@ -21,31 +21,26 @@ exports.createProject = asyncHandler(async (req, res, next) => {
   }
 });
 
-exports.getProjects = asyncHandler(async (req, res, next) => {
+exports.getProject = asyncHandler(async (req, res, next) => {
   try {
-    const projects = await projectService.getProjects();
+    const id = req.params.id;
 
+    if (id) {
+      const project = await projectService.getProjectById(id);
+      logger.info('Project detail request handled', { projectId: id, userId: req.user.id });
+      return res.json({
+        success: true,
+        data: project
+      });
+    }
+
+    const projects = await projectService.getProjects();
     logger.info('Projects list request handled', { count: projects.length, userId: req.user.id });
 
     res.json({
       success: true,
       data: projects,
       count: projects.length
-    });
-  } catch (err) {
-    next(err);
-  }
-});
-
-exports.getProjectById = asyncHandler(async (req, res, next) => {
-  try {
-    const project = await projectService.getProjectById(req.params.id);
-
-    logger.info('Project detail request handled', { projectId: req.params.id, userId: req.user.id });
-
-    res.json({
-      success: true,
-      data: project
     });
   } catch (err) {
     next(err);

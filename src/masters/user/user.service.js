@@ -54,7 +54,7 @@ exports.getAll = async () => {
 
     const [rows] = await db.query(`
       SELECT 
-        u.id, u.name, u.email, u.is_active,
+        u.id, u.name, u.email, u.is_active,u.profile_image,
         c.name AS company,
         r.name AS role
       FROM users u

@@ -1,0 +1,1369 @@
+[2026-02-17T06:08:31.445Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T06:08:31.447Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T06:08:32.081Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T06:08:40.312Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs","userId":null}
+[2026-02-17T06:08:40.337Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/","userId":null}
+[2026-02-17T06:08:40.391Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui.css","userId":null}
+[2026-02-17T06:08:40.404Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-bundle.js","userId":null}
+[2026-02-17T06:08:40.426Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-standalone-preset.js","userId":null}
+[2026-02-17T06:08:40.444Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-init.js","userId":null}
+[2026-02-17T06:08:41.068Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/favicon-32x32.png","userId":null}
+[2026-02-17T06:23:51.979Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T06:23:51.981Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T06:23:52.009Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T06:23:57.547Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/","userId":null}
+[2026-02-17T06:23:57.580Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui.css","userId":null}
+[2026-02-17T06:23:57.587Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-bundle.js","userId":null}
+[2026-02-17T06:23:57.591Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-standalone-preset.js","userId":null}
+[2026-02-17T06:23:57.594Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-init.js","userId":null}
+[2026-02-17T06:27:40.077Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/","userId":null}
+[2026-02-17T06:27:40.111Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui.css","userId":null}
+[2026-02-17T06:27:40.121Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-bundle.js","userId":null}
+[2026-02-17T06:27:40.126Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-standalone-preset.js","userId":null}
+[2026-02-17T06:27:40.138Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-init.js","userId":null}
+[2026-02-17T06:27:40.496Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/favicon-32x32.png","userId":null}
+[2026-02-17T07:05:07.480Z] [INFO] HTTP Request | {"method":"POST","path":"/api/companies","userId":null}
+[2026-02-17T07:05:07.482Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:07:03.616Z] [INFO] HTTP Request | {"method":"POST","path":"/api/auth/login","userId":null}
+[2026-02-17T07:07:03.618Z] [INFO] Login attempt | {"email":"john@test.com"}
+[2026-02-17T07:07:03.798Z] [WARN] Login failed - invalid password | {"email":"john@test.com","userId":1}
+[2026-02-17T07:07:03.802Z] [ERROR] Invalid credentials | {"method":"POST","path":"/api/auth/login","statusCode":401,"errorCode":"INVALID_CREDENTIALS","userId":null,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36","responseTimeMs":183,"error":{"message":"Invalid credentials","stack":"Error: Invalid credentials\n    at AppError.unauthorized (D:\\subash\\projects\\git\\node\\TMS-BE\\src\\utils\\AppError.js:39:10)\n    at D:\\subash\\projects\\git\\node\\TMS-BE\\src\\auth\\auth.controller.js:36:26","name":"Error"}}
+[2026-02-17T07:07:08.039Z] [INFO] HTTP Request | {"method":"POST","path":"/api/auth/login","userId":null}
+[2026-02-17T07:07:08.040Z] [INFO] Login attempt | {"email":"john@test.com"}
+[2026-02-17T07:07:08.257Z] [INFO] User logged in successfully | {"userId":1,"email":"john@test.com"}
+[2026-02-17T07:07:08.368Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:07:08.370Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:07:08.375Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:07:08.377Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:07:08.382Z] [INFO] Companies fetched successfully | {"count":1}
+[2026-02-17T07:07:08.386Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:07:08.397Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:07:08.401Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:07:08.421Z] [INFO] Users fetched successfully | {"count":1}
+[2026-02-17T07:07:13.680Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:07:13.681Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:07:13.688Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:07:13.690Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:07:29.973Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:07:29.973Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:07:29.979Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:07:30.002Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:08:58.618Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:08:58.619Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:08:58.628Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:08:58.633Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:09:15.852Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T07:09:15.854Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T07:09:15.885Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T07:09:18.121Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:09:18.136Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:09:18.146Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:09:18.149Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:09:24.139Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:09:24.140Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:09:24.150Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:09:26.203Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:09:26.205Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:09:26.207Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:09:26.208Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:09:28.767Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:09:28.768Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:09:28.772Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:09:30.857Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:09:30.858Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:09:30.868Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:09:30.871Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:09:47.836Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:09:47.837Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:09:47.839Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:09:58.449Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:09:58.451Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:09:58.453Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:09:58.454Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:10:51.630Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T07:10:51.632Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T07:10:51.656Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T07:11:37.599Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T07:11:37.601Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T07:11:37.621Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T07:12:21.779Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T07:12:21.781Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T07:12:21.802Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T07:13:10.345Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T07:13:10.349Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T07:13:10.367Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T07:13:18.490Z] [INFO] Running database migrations...
+[2026-02-17T07:13:18.512Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T07:13:18.523Z] [INFO] Migration: Adding company_logo column to companies table...
+[2026-02-17T07:13:18.931Z] [INFO] Migration: Successfully added company_logo column.
+[2026-02-17T07:13:18.932Z] [INFO] Migrations completed successfully
+[2026-02-17T07:13:18.938Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T07:13:18.939Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T07:14:12.099Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/","userId":null}
+[2026-02-17T07:14:12.153Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui.css","userId":null}
+[2026-02-17T07:14:12.159Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-bundle.js","userId":null}
+[2026-02-17T07:14:12.177Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-standalone-preset.js","userId":null}
+[2026-02-17T07:14:12.192Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-init.js","userId":null}
+[2026-02-17T07:14:12.700Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/favicon-32x32.png","userId":null}
+[2026-02-17T07:14:36.681Z] [INFO] HTTP Request | {"method":"POST","path":"/api/companies","userId":null}
+[2026-02-17T07:14:36.683Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:15:31.380Z] [INFO] HTTP Request | {"method":"POST","path":"/api/users","userId":null}
+[2026-02-17T07:15:31.399Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:15:52.681Z] [INFO] HTTP Request | {"method":"POST","path":"/api/users","userId":null}
+[2026-02-17T07:15:52.682Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:15:52.932Z] [INFO] User created successfully | {"userId":2,"email":"sk@test.com"}
+[2026-02-17T07:15:52.934Z] [INFO] User created via controller | {"userId":2,"email":"sk@test.com"}
+[2026-02-17T07:16:23.476Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:16:23.477Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:16:23.481Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:16:23.483Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:16:23.486Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:16:23.489Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:16:23.494Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:16:23.498Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T07:16:23.505Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:16:27.360Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:16:27.360Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:16:27.364Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:16:31.433Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:16:31.434Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:16:31.455Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:16:37.745Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:16:37.747Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:16:37.750Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:16:37.751Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:17:20.604Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:17:20.605Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:17:20.608Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:17:22.664Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:17:22.665Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:17:22.669Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:17:22.674Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:17:22.685Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:17:22.686Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:17:22.688Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T07:17:22.691Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:17:22.694Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:17:23.666Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:17:23.667Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:17:23.693Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:17:25.089Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:17:25.090Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:17:25.093Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:17:25.095Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:17:25.097Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:17:25.100Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:17:25.103Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T07:17:25.105Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:17:25.109Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:18:29.235Z] [INFO] HTTP Request | {"method":"POST","path":"/api/users","userId":null}
+[2026-02-17T07:18:29.236Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:18:29.411Z] [INFO] User created successfully | {"userId":3,"email":"subash@gmail.com"}
+[2026-02-17T07:18:29.412Z] [INFO] User created via controller | {"userId":3,"email":"subash@gmail.com"}
+[2026-02-17T07:18:29.421Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:18:29.421Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:18:29.425Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T07:18:40.656Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:18:40.657Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:18:40.663Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:18:42.259Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:18:42.260Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:18:42.263Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:18:42.264Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:18:42.267Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:18:42.269Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:18:42.271Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T07:18:42.275Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:18:42.279Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:19:09.615Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:19:09.618Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:19:09.629Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:19:09.638Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:19:09.646Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:19:09.650Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:19:09.654Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T07:19:09.657Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:19:09.690Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:21:02.762Z] [INFO] Running database migrations...
+[2026-02-17T07:21:02.791Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T07:21:02.810Z] [INFO] Migration: company_logo column already exists. No action needed.
+[2026-02-17T07:21:02.812Z] [INFO] Migrations completed successfully
+[2026-02-17T07:21:02.818Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T07:21:02.819Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T07:21:07.853Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:21:07.858Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:07.864Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T07:21:07.941Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:21:08.013Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:08.017Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:21:08.022Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:08.101Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:21:08.314Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:21:53.094Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:21:53.095Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:53.100Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:21:54.512Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:21:54.513Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:54.515Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:21:54.518Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:54.526Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:21:54.527Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:54.530Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T07:21:54.570Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:21:54.591Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:21:55.020Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:21:55.021Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:55.026Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:21:55.514Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:21:55.516Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:55.522Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:21:55.526Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:21:56.257Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:21:56.258Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:56.265Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:21:57.299Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:21:57.300Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:57.308Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:21:57.311Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:57.315Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:21:57.318Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:57.329Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T07:21:57.332Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:21:57.344Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:21:57.794Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:21:57.795Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:57.797Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:21:58.290Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:21:58.291Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:58.294Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:21:58.620Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:21:58.621Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:21:58.627Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:21:58.628Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:22:00.598Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:22:00.599Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:00.602Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:22:01.164Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:22:01.165Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:01.168Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:22:01.175Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:01.177Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:22:01.178Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:01.181Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:22:01.186Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T07:22:01.194Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:22:01.992Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:22:01.993Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:01.996Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:22:02.408Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:22:02.410Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:02.413Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:22:02.414Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T07:22:04.239Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:22:04.240Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:04.243Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:22:05.357Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T07:22:05.358Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:05.361Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T07:22:05.368Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:05.372Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:22:05.383Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:05.414Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T07:22:05.420Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T07:22:05.429Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:22:05.953Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T07:22:05.954Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:05.958Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T07:22:06.440Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T07:22:06.441Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T07:22:06.445Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T07:22:06.445Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:25:09.080Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:25:09.082Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:25:09.086Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:25:09.088Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:26:31.531Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:26:31.532Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:31.535Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:26:36.208Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:26:36.208Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:36.211Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:26:36.215Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:26:37.314Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:26:37.315Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:37.318Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:26:37.903Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:26:37.905Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:37.913Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:26:37.916Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:37.919Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:26:37.953Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:37.954Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T09:26:37.967Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:26:37.970Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:26:39.180Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:26:39.181Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:39.183Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:26:40.882Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:26:40.883Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:40.887Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:26:40.888Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:26:42.365Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:26:42.366Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:42.372Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:26:44.915Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:26:44.916Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:44.919Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:26:44.920Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:26:46.326Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:26:46.352Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:46.362Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:26:48.525Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:26:48.528Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:48.530Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:26:48.547Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:26:51.107Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:26:51.111Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:51.114Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:26:51.116Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:51.120Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:26:51.121Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:51.133Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T09:26:51.138Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:26:51.153Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:26:53.681Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:26:53.682Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:53.684Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:26:55.870Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:26:55.871Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:55.874Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:26:55.875Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:26:58.086Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:26:58.087Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:26:58.088Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:27:02.221Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:27:02.225Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:27:02.228Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:27:02.228Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:31:15.031Z] [INFO] HTTP Request | {"method":"POST","path":"/api/projects","userId":null}
+[2026-02-17T09:31:15.032Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:15.103Z] [INFO] Project created successfully | {"projectId":2,"company_id":1}
+[2026-02-17T09:31:15.103Z] [INFO] Project creation request handled | {"projectId":2,"userId":1}
+[2026-02-17T09:31:15.115Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:31:15.117Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:15.120Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:31:15.121Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:31:34.488Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:31:34.489Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:34.499Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:31:34.514Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:31:41.051Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:31:41.052Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:41.055Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:31:44.312Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:31:44.312Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:44.315Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:31:44.316Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:31:46.741Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:31:46.742Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:46.745Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:31:50.880Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:31:50.882Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:50.885Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:31:50.890Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:50.893Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:31:50.897Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:50.915Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:31:50.920Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T09:31:50.937Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:31:54.637Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:31:54.637Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:54.643Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:31:54.646Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:31:55.218Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:31:55.218Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:55.221Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:31:56.706Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:31:56.707Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:31:56.709Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:31:56.712Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:32:19.982Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:32:19.983Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:19.985Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:32:20.024Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:32:32.049Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:32:32.050Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:32.052Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:32:33.530Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:32:33.531Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:33.533Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:32:33.536Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:33.559Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:32:33.561Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:33.563Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T09:32:33.565Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:32:33.580Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:32:35.995Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:32:35.995Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:36.000Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:32:36.001Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:32:36.698Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:32:36.698Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:36.700Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:32:37.327Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:32:37.329Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:37.334Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:32:37.341Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:37.346Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T09:32:37.349Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:32:37.390Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:32:37.398Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:37.415Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:32:38.015Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:32:38.016Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:38.018Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:32:39.267Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:32:39.268Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:39.276Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:32:48.002Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:32:48.007Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:32:48.009Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:32:48.010Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:33:08.108Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:33:08.108Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:33:08.110Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:33:08.112Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:33:08.114Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:33:08.118Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:33:08.121Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T09:33:08.126Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:33:08.136Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:33:09.008Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:33:09.010Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:33:09.013Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:33:09.858Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:33:09.859Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:33:09.881Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:33:09.884Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:33:11.003Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:33:11.004Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:33:11.007Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:33:11.689Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:33:11.691Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:33:11.694Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:33:11.697Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:33:11.700Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:33:11.701Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:33:11.706Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T09:33:11.716Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:33:11.723Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:35:09.292Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:35:09.293Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:09.299Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:35:09.302Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:09.305Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:35:09.306Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:09.307Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:35:09.310Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T09:35:09.313Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:35:11.883Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:35:11.884Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:11.888Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:35:11.889Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:35:19.288Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:35:19.289Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:19.292Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:35:20.391Z] [INFO] HTTP Request | {"method":"DELETE","path":"/api/roles/1","userId":null}
+[2026-02-17T09:35:20.392Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:20.471Z] [ERROR] Error deleting role | {"id":"1","error":{"message":"Cannot delete or update a parent row: a foreign key constraint fails (`help_desk`.`users`, CONSTRAINT `users_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))","stack":"Error: Cannot delete or update a parent row: a foreign key constraint fails (`help_desk`.`users`, CONSTRAINT `users_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))\n    at PromisePool.query (D:\\subash\\projects\\git\\node\\TMS-BE\\node_modules\\mysql2\\lib\\promise\\pool.js:36:22)\n    at exports.softDelete (D:\\subash\\projects\\git\\node\\TMS-BE\\src\\masters\\role\\role.service.js:117:14)\n    at D:\\subash\\projects\\git\\node\\TMS-BE\\src\\masters\\role\\role.controller.js:52:19\n    at D:\\subash\\projects\\git\\node\\TMS-BE\\src\\middlewares\\errorHandler.js:54:19\n    at Layer.handleRequest (D:\\subash\\projects\\git\\node\\TMS-BE\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\subash\\projects\\git\\node\\TMS-BE\\node_modules\\router\\lib\\route.js:157:13)\n    at D:\\subash\\projects\\git\\node\\TMS-BE\\src\\middlewares\\authorize.js:10:14\n    at Layer.handleRequest (D:\\subash\\projects\\git\\node\\TMS-BE\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\subash\\projects\\git\\node\\TMS-BE\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\subash\\projects\\git\\node\\TMS-BE\\node_modules\\router\\lib\\route.js:117:3)","name":"Error"}}
+[2026-02-17T09:35:20.475Z] [ERROR] Failed to delete role | {"method":"DELETE","path":"/api/roles/1","statusCode":500,"errorCode":"INTERNAL_SERVER_ERROR","userId":1,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36","responseTimeMs":83,"error":{"message":"Failed to delete role","stack":"Error: Failed to delete role\n    at AppError.internalError (D:\\subash\\projects\\git\\node\\TMS-BE\\src\\utils\\AppError.js:59:10)\n    at exports.softDelete (D:\\subash\\projects\\git\\node\\TMS-BE\\src\\masters\\role\\role.service.js:126:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async D:\\subash\\projects\\git\\node\\TMS-BE\\src\\masters\\role\\role.controller.js:52:5","name":"Error"}}
+[2026-02-17T09:35:23.176Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:35:23.178Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:23.188Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:35:24.659Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:35:24.661Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:24.666Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:35:24.668Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:24.672Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:35:24.674Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:24.679Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T09:35:24.684Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:35:24.686Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:35:31.466Z] [INFO] HTTP Request | {"method":"DELETE","path":"/api/users/2","userId":null}
+[2026-02-17T09:35:31.467Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:31.507Z] [INFO] User deactivated successfully | {"userId":"2"}
+[2026-02-17T09:35:31.514Z] [INFO] User deactivation request handled | {"deactivatedUserId":"2","userId":1}
+[2026-02-17T09:35:31.526Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:35:31.532Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:31.536Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:35:33.890Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:35:33.890Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:33.922Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:35:38.591Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:35:38.592Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:38.596Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:35:38.599Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:35:44.917Z] [INFO] HTTP Request | {"method":"DELETE","path":"/api/projects/2","userId":null}
+[2026-02-17T09:35:44.918Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:44.956Z] [INFO] Project archived successfully | {"projectId":"2"}
+[2026-02-17T09:35:44.956Z] [INFO] Project archive request handled | {"projectId":"2","userId":1}
+[2026-02-17T09:35:44.971Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:35:44.972Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:35:44.974Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:35:44.979Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:36:02.170Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:36:02.171Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:02.172Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:36:02.731Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:36:02.732Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:02.736Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:36:02.737Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:02.742Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:36:02.753Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:02.759Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:36:02.765Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:36:02.770Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:36:03.647Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:36:03.648Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:03.650Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:36:04.167Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:36:04.168Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:04.170Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:36:04.172Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:04.180Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:36:04.197Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:36:04.207Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:04.213Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:36:04.218Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:36:05.759Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:36:05.759Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:05.763Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:36:06.226Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:36:06.227Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:06.229Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:36:06.231Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:36:08.447Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:36:08.447Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:36:08.450Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:38:50.527Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:38:50.528Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:38:50.532Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:38:57.337Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:38:57.339Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:38:57.340Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:38:57.342Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:38:57.344Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:38:57.345Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:38:57.347Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:38:57.359Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:38:57.388Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:38:59.206Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:38:59.208Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:38:59.211Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:38:59.215Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:38:59.223Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:38:59.229Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:39:05.249Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:39:05.264Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:05.277Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:39:05.279Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:05.283Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:39:05.294Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:39:27.584Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:39:27.587Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:27.593Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:39:27.619Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:27.622Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:39:27.643Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:27.718Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:39:27.742Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:39:27.778Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:39:37.474Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:39:37.476Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:37.487Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:39:37.489Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:37.495Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:39:37.505Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:37.509Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:39:37.515Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:39:37.533Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:39:47.041Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:39:47.044Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:47.052Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:39:47.055Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:47.061Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:39:47.073Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:39:57.123Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:39:57.124Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:57.126Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:39:57.128Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:57.136Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:39:57.140Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:57.156Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:39:57.161Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:39:57.204Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:39:58.287Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:39:58.288Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:39:58.290Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:40:04.437Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:40:04.438Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:40:04.446Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:40:12.054Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:40:12.055Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:40:12.059Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:40:40.038Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:40:40.039Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:40:40.041Z] [INFO] Projects fetched successfully | {"count":0}
+[2026-02-17T09:40:40.042Z] [INFO] Projects list request handled | {"count":0,"userId":1}
+[2026-02-17T09:40:47.887Z] [INFO] HTTP Request | {"method":"POST","path":"/api/projects","userId":null}
+[2026-02-17T09:40:47.888Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:40:47.942Z] [INFO] Project created successfully | {"projectId":3,"company_id":1}
+[2026-02-17T09:40:47.946Z] [INFO] Project creation request handled | {"projectId":3,"userId":1}
+[2026-02-17T09:40:47.960Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:40:47.968Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:40:47.971Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:40:47.998Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:40:59.067Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/projects/3","userId":null}
+[2026-02-17T09:40:59.068Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:40:59.102Z] [INFO] Project updated successfully | {"projectId":"3"}
+[2026-02-17T09:40:59.103Z] [INFO] Project update request handled | {"projectId":"3","userId":1}
+[2026-02-17T09:40:59.110Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:40:59.115Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:40:59.120Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:40:59.122Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:41:57.003Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:41:57.005Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:41:57.011Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:41:57.435Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:41:57.435Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:41:57.437Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:41:57.442Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:41:57.444Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:41:57.446Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:41:57.448Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:41:57.464Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:41:57.471Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:41:57.911Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:41:57.912Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:41:57.914Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:41:59.140Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T09:41:59.142Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:41:59.146Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T09:41:59.147Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T09:42:01.076Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:42:01.077Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:01.083Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:42:01.860Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:42:01.860Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:01.863Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:42:01.864Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:01.869Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:42:01.883Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:01.925Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:42:01.933Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:42:01.945Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:42:04.263Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:42:04.264Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:04.266Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:42:14.225Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:42:14.226Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:14.227Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:42:14.229Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:14.231Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:42:14.247Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:14.252Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:42:14.254Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:42:14.275Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:42:15.703Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:42:15.703Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:15.707Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:42:15.710Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:15.712Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:42:15.714Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:42:17.652Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:42:17.653Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:17.661Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:42:17.664Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:17.667Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:42:17.687Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:42:17.707Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:42:17.715Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:42:17.720Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:45:56.029Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:45:56.030Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:45:56.034Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:46:12.715Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:46:12.716Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:12.721Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:46:14.145Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:46:14.146Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:14.149Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:46:14.151Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:14.153Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:46:14.155Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:14.161Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:46:14.166Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:46:14.168Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:46:16.054Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:46:16.078Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:16.103Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:46:16.104Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:16.144Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:46:16.180Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:46:30.448Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/users/3","userId":null}
+[2026-02-17T09:46:30.449Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:30.504Z] [INFO] User updated successfully | {"userId":"3"}
+[2026-02-17T09:46:30.518Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:46:30.519Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:30.522Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:46:30.614Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:46:30.616Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:30.619Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:46:30.622Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:30.627Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:46:30.632Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:46:33.566Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:46:33.568Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:33.570Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:46:33.571Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:46:33.574Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:46:33.579Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:49:58.662Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:49:58.667Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:49:58.670Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:49:58.674Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:49:58.677Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:49:58.690Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:50:54.124Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:50:54.125Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:50:54.131Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:50:54.133Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:50:54.135Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:50:54.136Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:50:54.139Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:50:54.142Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:50:54.145Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:51:21.532Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/1","userId":null}
+[2026-02-17T09:51:21.534Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:21.537Z] [INFO] HTTP Request | {"method":"GET","path":"/string","userId":null}
+[2026-02-17T09:51:21.538Z] [WARN] 404 Not Found | {"method":"GET","path":"/string"}
+[2026-02-17T09:51:21.541Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:51:21.550Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:21.552Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:51:21.554Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:21.558Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:51:21.566Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:51:26.838Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T09:51:26.839Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:26.841Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:51:26.843Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:26.845Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:51:26.846Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:26.851Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:51:26.867Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:51:35.443Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/users/3","userId":null}
+[2026-02-17T09:51:35.444Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:35.493Z] [INFO] User updated successfully | {"userId":"3"}
+[2026-02-17T09:51:35.502Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:51:35.503Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:35.506Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:51:35.613Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:51:35.614Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:35.616Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:51:35.617Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:51:35.620Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:51:35.622Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:22.488Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:22.490Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:22.492Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:53:22.494Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:22.497Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T09:53:22.500Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:22.515Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:22.525Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:53:27.748Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:27.749Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:27.750Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:29.206Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:53:29.208Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:29.212Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:29.214Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:29.217Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:53:29.223Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:29.232Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:53:29.235Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:29.242Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:53:31.714Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:31.715Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:31.716Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:33.041Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:53:33.042Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:33.046Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:53:33.049Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:33.053Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:53:33.064Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:53:33.067Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:33.072Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:33.078Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:35.195Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:35.196Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:35.199Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:53:35.248Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:35.249Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T09:53:35.253Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:35.261Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:35.263Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:53:48.888Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:48.890Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:48.894Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:51.528Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:53:51.530Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:51.538Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:51.540Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:51.542Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:53:51.547Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:51.559Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:53:51.564Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:51.578Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:53:52.787Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:53:52.788Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:52.791Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:52.794Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:52.796Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T09:53:52.799Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:52.803Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:53:52.815Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:53:58.536Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/users/3","userId":null}
+[2026-02-17T09:53:58.537Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:58.579Z] [INFO] User updated successfully | {"userId":"3"}
+[2026-02-17T09:53:58.587Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:53:58.590Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:58.596Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:53:58.693Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:53:58.694Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:58.696Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:53:58.697Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:53:58.700Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:53:58.705Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:54:00.789Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:54:00.790Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:00.792Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T09:54:00.793Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:00.795Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:54:00.797Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:00.815Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:54:00.828Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:54:08.013Z] [INFO] HTTP Request | {"method":"GET","path":"/string","userId":null}
+[2026-02-17T09:54:08.014Z] [WARN] 404 Not Found | {"method":"GET","path":"/string"}
+[2026-02-17T09:54:08.019Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:54:08.023Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:08.026Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:54:08.027Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:08.029Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/1","userId":null}
+[2026-02-17T09:54:08.031Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:08.047Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:54:08.050Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:54:17.973Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/users/1","userId":null}
+[2026-02-17T09:54:17.974Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:18.020Z] [INFO] User updated successfully | {"userId":"1"}
+[2026-02-17T09:54:18.027Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:54:18.028Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:18.030Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:54:18.118Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:54:18.121Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:18.123Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:54:18.126Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:18.129Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:54:18.144Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:54:20.114Z] [INFO] HTTP Request | {"method":"GET","path":"/string","userId":null}
+[2026-02-17T09:54:20.115Z] [WARN] 404 Not Found | {"method":"GET","path":"/string"}
+[2026-02-17T09:54:20.119Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:54:20.122Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:20.125Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:54:20.130Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:20.179Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/1","userId":null}
+[2026-02-17T09:54:20.186Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:20.196Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:54:20.201Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:54:22.407Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:54:22.408Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:22.411Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:54:32.954Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/companies/1","userId":null}
+[2026-02-17T09:54:32.956Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:33.014Z] [INFO] Company updated successfully | {"companyId":"1"}
+[2026-02-17T09:54:33.023Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:54:33.024Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:33.026Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:54:35.973Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:54:36.004Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:36.007Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:54:36.029Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:36.035Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:54:36.069Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:54:36.082Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:54:36.091Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:54:36.109Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:55:33.999Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:55:34.003Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:55:34.016Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:55:34.019Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:55:34.045Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:55:34.050Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:55:34.056Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:55:34.068Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:55:34.077Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:55:48.466Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:55:48.494Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:55:48.575Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:56:26.655Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:56:26.656Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:56:26.659Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:56:35.904Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:56:35.905Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:56:35.915Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:56:38.107Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:56:38.120Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:56:38.137Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:56:38.205Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:56:38.212Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:56:38.219Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:56:38.271Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:56:38.310Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:56:38.333Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:57:06.153Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:57:06.160Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:57:06.162Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:57:06.164Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:57:06.167Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:57:06.170Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:57:06.177Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:57:06.182Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:57:06.185Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:57:12.584Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:57:12.585Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:57:12.586Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:57:17.101Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:57:17.104Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:57:17.114Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:57:19.072Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:57:19.076Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:57:19.080Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:57:19.083Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:57:19.089Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:57:19.107Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:57:19.113Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:57:19.152Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:57:19.167Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:58:52.095Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:58:52.097Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:58:52.100Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:58:52.106Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:58:52.108Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:58:52.111Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:58:52.130Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:58:52.130Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:58:52.133Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:59:02.888Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:59:02.891Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:02.894Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:59:02.897Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:02.900Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:59:02.908Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:02.910Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:59:02.914Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:59:02.922Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:59:08.076Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T09:59:08.078Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:08.089Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:59:08.091Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:08.094Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:59:08.096Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:08.100Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:59:08.111Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:59:33.410Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:59:33.434Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:33.438Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:59:35.486Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:59:35.505Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:35.513Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:59:37.194Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:59:37.195Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:37.207Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:59:54.637Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:59:54.639Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:54.642Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:59:54.644Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:54.658Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:59:54.659Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:54.662Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:59:54.668Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:59:54.679Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T09:59:59.667Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T09:59:59.668Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:59.673Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T09:59:59.676Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:59.678Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T09:59:59.688Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T09:59:59.691Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T09:59:59.694Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T09:59:59.701Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:00:05.943Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:00:05.944Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:00:05.949Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:00:05.952Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:00:05.955Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/1","userId":null}
+[2026-02-17T10:00:05.957Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:00:05.960Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:00:05.963Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:00:11.953Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:00:11.954Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:00:11.956Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:00:13.435Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:00:13.438Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:00:13.440Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:00:13.444Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:00:13.450Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:00:13.454Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:00:13.456Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:00:13.479Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:00:13.496Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:00:58.695Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:00:58.696Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:00:58.701Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:01:03.820Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:01:03.824Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:01:03.829Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:01:03.831Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:01:03.848Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:01:03.850Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:01:20.552Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:01:20.555Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:01:20.557Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:01:20.561Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:01:20.565Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:01:20.566Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:01:20.569Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:01:20.572Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:01:20.576Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:01:46.084Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:01:46.123Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:01:46.222Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:01:46.234Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:01:46.269Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:01:46.272Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:01:46.302Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:01:46.339Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:01:46.378Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:02:19.542Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:02:19.546Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:02:19.549Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:04:09.830Z] [INFO] Running database migrations...
+[2026-02-17T10:04:09.855Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T10:04:09.864Z] [INFO] Migration: company_logo column already exists. No action needed.
+[2026-02-17T10:04:09.865Z] [INFO] Migrations completed successfully
+[2026-02-17T10:04:09.871Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T10:04:09.872Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T10:04:20.725Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:04:20.728Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:04:20.752Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:04:22.892Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:04:22.896Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:04:22.913Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:04:22.925Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:04:22.928Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:04:22.932Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:04:22.949Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:04:23.009Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:04:23.059Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:04:27.121Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:04:27.125Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:04:27.149Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:04:27.153Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:04:27.199Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T10:04:27.272Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:04:27.290Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:04:27.299Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:05:06.272Z] [INFO] Running database migrations...
+[2026-02-17T10:05:06.295Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T10:05:06.309Z] [INFO] Migration: company_logo column already exists. No action needed.
+[2026-02-17T10:05:06.314Z] [INFO] Migration: profile_image column already exists in users table.
+[2026-02-17T10:05:06.315Z] [INFO] Migrations completed successfully
+[2026-02-17T10:05:06.322Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T10:05:06.322Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T10:05:30.592Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:05:30.595Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:05:30.605Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:05:35.620Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:05:35.621Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:05:35.626Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:05:35.653Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:05:35.655Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:05:35.659Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:05:35.688Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T10:05:35.689Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:05:57.958Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:05:57.959Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:05:57.969Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:05:57.980Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:05:57.986Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:05:57.991Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:05:57.995Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:05:58.000Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:05:58.091Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:06:09.970Z] [INFO] Running database migrations...
+[2026-02-17T10:06:09.990Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T10:06:10.000Z] [INFO] Migration: company_logo column already exists. No action needed.
+[2026-02-17T10:06:10.004Z] [INFO] Migration: profile_image column already exists in users table.
+[2026-02-17T10:06:10.005Z] [INFO] Migrations completed successfully
+[2026-02-17T10:06:10.009Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T10:06:10.010Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T10:06:51.379Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T10:06:51.381Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:06:51.386Z] [INFO] Projects fetched successfully | {"count":1}
+[2026-02-17T10:06:51.387Z] [INFO] Projects list request handled | {"count":1,"userId":1}
+[2026-02-17T10:06:59.986Z] [INFO] HTTP Request | {"method":"POST","path":"/api/projects","userId":null}
+[2026-02-17T10:06:59.987Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:07:00.043Z] [INFO] Project created successfully | {"projectId":4,"company_id":1}
+[2026-02-17T10:07:00.044Z] [INFO] Project creation request handled | {"projectId":4,"userId":1}
+[2026-02-17T10:07:00.052Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T10:07:00.054Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:07:00.059Z] [INFO] Projects fetched successfully | {"count":2}
+[2026-02-17T10:07:00.062Z] [INFO] Projects list request handled | {"count":2,"userId":1}
+[2026-02-17T10:07:06.974Z] [INFO] HTTP Request | {"method":"POST","path":"/api/projects","userId":null}
+[2026-02-17T10:07:06.994Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:07:07.077Z] [INFO] Project created successfully | {"projectId":5,"company_id":1}
+[2026-02-17T10:07:07.081Z] [INFO] Project creation request handled | {"projectId":5,"userId":1}
+[2026-02-17T10:07:07.149Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T10:07:07.163Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:07:07.211Z] [INFO] Projects fetched successfully | {"count":3}
+[2026-02-17T10:07:07.214Z] [INFO] Projects list request handled | {"count":3,"userId":1}
+[2026-02-17T10:08:02.725Z] [INFO] Running database migrations...
+[2026-02-17T10:08:02.748Z] [INFO] Database connection pool created successfully | {"host":"localhost","database":"help_desk","user":"root"}
+[2026-02-17T10:08:02.759Z] [INFO] Migration: company_logo column already exists. No action needed.
+[2026-02-17T10:08:02.763Z] [INFO] Migration: profile_image column exists. Ensuring it is LONGTEXT and cleaning bad data...
+[2026-02-17T10:08:02.929Z] [INFO] Migration: profile_image column updated and cleaned.
+[2026-02-17T10:08:02.930Z] [INFO] Migrations completed successfully
+[2026-02-17T10:08:02.941Z] [INFO] Server starting on port 3000 | {"port":3000}
+[2026-02-17T10:08:02.942Z] [INFO] Swagger docs available at http://localhost:3000/api/docs
+[2026-02-17T10:17:12.545Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:17:12.548Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:17:12.556Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:17:12.564Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:17:12.568Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:17:12.586Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:17:12.592Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:17:12.602Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:17:12.617Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:17:14.646Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:17:14.682Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:17:14.696Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:17:14.698Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:17:14.747Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/1","userId":null}
+[2026-02-17T10:17:14.751Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:17:14.771Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:17:14.777Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:17:20.094Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:17:20.094Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:17:20.097Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:17:33.351Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/","userId":null}
+[2026-02-17T10:17:33.418Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui.css","userId":null}
+[2026-02-17T10:17:33.420Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-bundle.js","userId":null}
+[2026-02-17T10:17:33.434Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-standalone-preset.js","userId":null}
+[2026-02-17T10:17:33.454Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/swagger-ui-init.js","userId":null}
+[2026-02-17T10:17:33.845Z] [INFO] HTTP Request | {"method":"GET","path":"/api/docs/favicon-32x32.png","userId":null}
+[2026-02-17T10:17:46.225Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:17:46.226Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:17:46.231Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:17:53.302Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:17:53.303Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:17:53.332Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:18:12.733Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:18:12.734Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:18:12.750Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:18:42.524Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:18:42.574Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:18:42.586Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:04.197Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:19:04.198Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:04.200Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:19:04.202Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:04.205Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:19:04.207Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:04.209Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:19:04.211Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:04.227Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:19:07.240Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:19:07.241Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:07.243Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:19:07.245Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:07.249Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T10:19:07.254Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:07.259Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:07.305Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:19:11.990Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/users/3","userId":null}
+[2026-02-17T10:19:11.991Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:12.065Z] [INFO] User updated successfully | {"userId":"3"}
+[2026-02-17T10:19:12.074Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:19:12.074Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:12.077Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:19:12.168Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:19:12.170Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:12.173Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:19:12.175Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:12.179Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:12.181Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:19:16.860Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:19:16.861Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:16.864Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:19:16.866Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:16.870Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/1","userId":null}
+[2026-02-17T10:19:16.872Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:16.892Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:16.901Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:19:21.490Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/users/1","userId":null}
+[2026-02-17T10:19:21.494Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:21.603Z] [INFO] User updated successfully | {"userId":"1"}
+[2026-02-17T10:19:21.614Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:19:21.623Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:21.628Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:19:21.734Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:19:21.735Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:21.737Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:19:21.738Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:21.742Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:21.746Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:19:24.991Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:19:24.992Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:24.994Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/1","userId":null}
+[2026-02-17T10:19:24.995Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:24.997Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:19:25.001Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:25.007Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:25.026Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:19:37.138Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:19:37.140Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:37.142Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:19:37.144Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:37.147Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:37.151Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:19:54.001Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:19:54.003Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:54.006Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/3","userId":null}
+[2026-02-17T10:19:54.007Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:54.009Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:19:54.013Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:54.028Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:54.041Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:19:58.288Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/users/3","userId":null}
+[2026-02-17T10:19:58.289Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:58.384Z] [INFO] User updated successfully | {"userId":"3"}
+[2026-02-17T10:19:58.396Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:19:58.400Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:58.405Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:19:58.646Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:19:58.672Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:58.696Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:19:58.700Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:19:58.705Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:19:58.709Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:20:04.617Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:20:04.618Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:20:04.620Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:20:04.621Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:20:04.625Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/1","userId":null}
+[2026-02-17T10:20:04.627Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:20:04.638Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:20:04.643Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:20:13.552Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:20:13.553Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:20:13.584Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:20:15.202Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:20:15.203Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:20:15.206Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:23:42.426Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T10:23:42.431Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:23:42.466Z] [INFO] Projects fetched successfully | {"count":3}
+[2026-02-17T10:23:42.473Z] [INFO] Projects list request handled | {"count":3,"userId":1}
+[2026-02-17T10:23:46.675Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:23:46.699Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:23:46.711Z] [INFO] Companies fetched successfully | {"count":2}
+[2026-02-17T10:23:52.299Z] [INFO] HTTP Request | {"method":"DELETE","path":"/api/companies/2","userId":null}
+[2026-02-17T10:23:52.306Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:23:52.342Z] [INFO] Company deactivated successfully | {"companyId":"2"}
+[2026-02-17T10:23:52.350Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:23:52.356Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:23:52.361Z] [INFO] Companies fetched successfully | {"count":1}
+[2026-02-17T10:23:53.842Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:23:53.844Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:23:53.848Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:23:53.853Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:23:53.856Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:23:53.858Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:23:53.859Z] [INFO] Companies fetched successfully | {"count":1}
+[2026-02-17T10:23:53.864Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:23:53.877Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:24:32.113Z] [INFO] HTTP Request | {"method":"POST","path":"/api/users","userId":null}
+[2026-02-17T10:24:32.121Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:32.406Z] [INFO] User created successfully | {"userId":4,"email":"rew@gmail.com"}
+[2026-02-17T10:24:32.408Z] [INFO] User created via controller | {"userId":4,"email":"rew@gmail.com"}
+[2026-02-17T10:24:32.422Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:24:32.425Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:32.432Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T10:24:38.186Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:24:38.187Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:38.190Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users/4","userId":null}
+[2026-02-17T10:24:38.191Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:38.193Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:24:38.197Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:38.199Z] [INFO] Companies fetched successfully | {"count":1}
+[2026-02-17T10:24:38.208Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:24:45.855Z] [INFO] HTTP Request | {"method":"PUT","path":"/api/users/4","userId":null}
+[2026-02-17T10:24:45.857Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:45.905Z] [INFO] User updated successfully | {"userId":"4"}
+[2026-02-17T10:24:45.911Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:24:45.912Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:45.923Z] [INFO] Users fetched successfully | {"count":3}
+[2026-02-17T10:24:46.076Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:24:46.120Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:46.132Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:24:46.176Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:46.210Z] [INFO] Companies fetched successfully | {"count":1}
+[2026-02-17T10:24:46.245Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:24:49.129Z] [INFO] HTTP Request | {"method":"DELETE","path":"/api/users/4","userId":null}
+[2026-02-17T10:24:49.131Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:49.175Z] [INFO] User deactivated successfully | {"userId":"4"}
+[2026-02-17T10:24:49.177Z] [INFO] User deactivation request handled | {"deactivatedUserId":"4","userId":1}
+[2026-02-17T10:24:49.192Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:24:49.194Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:24:49.203Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:25:00.499Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T10:25:00.500Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:25:00.502Z] [INFO] Projects fetched successfully | {"count":3}
+[2026-02-17T10:25:00.504Z] [INFO] Projects list request handled | {"count":3,"userId":1}
+[2026-02-17T10:25:09.438Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:25:09.439Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:25:09.468Z] [INFO] Companies fetched successfully | {"count":1}
+[2026-02-17T10:25:10.658Z] [INFO] HTTP Request | {"method":"GET","path":"/api/companies","userId":null}
+[2026-02-17T10:25:10.658Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:25:10.661Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:25:10.663Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:25:10.667Z] [INFO] HTTP Request | {"method":"GET","path":"/api/users","userId":null}
+[2026-02-17T10:25:10.669Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:25:10.679Z] [INFO] Companies fetched successfully | {"count":1}
+[2026-02-17T10:25:10.685Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:25:10.690Z] [INFO] Users fetched successfully | {"count":2}
+[2026-02-17T10:25:11.302Z] [INFO] HTTP Request | {"method":"GET","path":"/api/roles","userId":null}
+[2026-02-17T10:25:11.303Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:25:11.305Z] [INFO] Roles fetched successfully | {"count":1}
+[2026-02-17T10:25:11.934Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T10:25:11.935Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:25:11.937Z] [INFO] Projects fetched successfully | {"count":3}
+[2026-02-17T10:25:11.938Z] [INFO] Projects list request handled | {"count":3,"userId":1}
+[2026-02-17T10:26:43.637Z] [INFO] HTTP Request | {"method":"DELETE","path":"/api/projects/5","userId":null}
+[2026-02-17T10:26:43.638Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:26:44.025Z] [INFO] Project archived successfully | {"projectId":"5"}
+[2026-02-17T10:26:44.028Z] [INFO] Project archive request handled | {"projectId":"5","userId":1}
+[2026-02-17T10:26:44.056Z] [INFO] HTTP Request | {"method":"GET","path":"/api/projects","userId":null}
+[2026-02-17T10:26:44.057Z] [WARN] Authentication disabled - using mock user | {"ip":"::1"}
+[2026-02-17T10:26:44.061Z] [INFO] Projects fetched successfully | {"count":2}
+[2026-02-17T10:26:44.066Z] [INFO] Projects list request handled | {"count":2,"userId":1}

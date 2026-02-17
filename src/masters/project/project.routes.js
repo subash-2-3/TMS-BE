@@ -61,42 +61,25 @@ router.post(
  * @swagger
  * /api/projects:
  *   get:
- *     summary: Get all projects
- *     tags: [Project]
- *     security:
- *       - bearerAuth: []
- *     responses:
- *       200:
- *         description: List of projects
- */
-router.get(
-  '/',
-  authorizeRoles('Admin'),
-  projectController.getProjects
-);
-
-/**
- * @swagger
- * /api/projects/{id}:
- *   get:
- *     summary: Get project by ID
+ *     summary: Get all projects or project by ID
  *     tags: [Project]
  *     security:
  *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
- *         required: true
+ *         required: false
  *         schema:
  *           type: integer
+ *         description: Optional ID to get specific project
  *     responses:
  *       200:
- *         description: Project details
+ *         description: List of projects
  */
 router.get(
-  '/:id',
+  ['/', '/:id'],
   authorizeRoles('Admin'),
-  projectController.getProjectById
+  projectController.getProject
 );
 
 /**
